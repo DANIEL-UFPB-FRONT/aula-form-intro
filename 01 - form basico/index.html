@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="google.com" method="get"  id="form">
+
+        <h4>Dados de Acesso</h4>
+        <div>
+            <label for="idname">Nome:</label>
+            <input class="to-check" type="text" name="fname" id="idname" required>
+            <span class="error"></span>
+        </div>
+
+        <div>
+            <label for="idemail">Email:</label>
+            <input class="to-check" type="email" name="femail" id="idemail" required>
+            <span class="error"></span>
+        </div>
+
+        <div>
+            <label for="idpass">Senha:</label>
+            <input class="to-check" type="password" name="fpass" id="idpass" required>
+            <span class="error"></span>
+        </div>
+        
+        <div id="radio">
+            <h4>Escolha sua linguagem de programação favorita</h4>
+            <span class="error"></span>
+            <div class="radio">
+                <input class="to-check" type="radio" name="fav_language" id="idjava" value="Java"></input>        
+                <label for="idjava">Java</label>    
+            </div>
+            <div class="radio">
+                <input class="to-check" type="radio" name="fav_language" id="idcplus" value="C/C++"></input>        
+                <label for="idcplus">C/C++</label>
+            </div>
+            <div class="radio">
+                <input class="to-check" type="radio" name="fav_language" id="idpython" value="Python">
+                <label for="idpython">Python</label>
+            </div>
+            <div class="radio">
+                <input class="to-check" type="radio" name="fav_language" id="idjavascript" value="Javascript">
+                <label for="idjavascript">Javascript</label>
+            </div>
+        </div>
+
+        <div id="checkbox">
+            <h4>Quais tecnologias front-end você domina?</h4>
+            <span class="error"></span>
+            <div class="checkbox">
+                <input class="to-check" type="checkbox" name="fav_react" id="fav_react" value="React"></input>        
+                <label for="fav_react">React</label>    
+            </div>
+            <div class="checkbox">
+                <input class="to-check" type="checkbox" name="fav_angular" id="fav_angular" value="Angular"></input>        
+                <label for="fav_angular">Angular</label>
+            </div>
+            <div class="checkbox">
+                <input class="to-check" type="checkbox" name="fav_vue" id="fav_vue" value="Vue">
+                <label for="fav_vue">Vue</label>
+            </div>
+            <div class="checkbox">
+                <input class="to-check" type="checkbox" name="fav_svelt" id="fav_svelt" value="Svelt">
+                <label for="fav_svelt">Svelt</label>
+            </div>
+        </div>
+
+        <div id="button-container">
+            <input type="button" value="Input Button"></input>
+            <input type="submit" value="Input Submit">
+            <button type="submit" value="Button Submit">Button Submit</button>
+            <button type="button" value="Button Button">Button Button</button>
+        </div>
+        <div>
+
+            <h5>Observações adicionais</h5>
+            <textarea class="to-check" name="textarea" id="text" cols="30" rows="5" required></textarea>
+            <span class="error"></span>
+        </div>
+
+        <input id="enviar" type="button" value="Enviar">
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
