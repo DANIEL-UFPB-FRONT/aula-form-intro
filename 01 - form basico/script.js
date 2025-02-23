@@ -34,8 +34,8 @@ function checkRadio(parent) {
 
 function checkCheckBox(parent) {
     const boxes = Array.from(parent.querySelectorAll("input[type=checkbox]"))
-    const isChecked = boxes.every(item => !item.checked)
-    if(isChecked)
+    const isChecked = boxes.some(item => item.checked)
+    if(!isChecked)
         parent.querySelector('.error').innerHTML = '*Campo com erro!'
         
 }
